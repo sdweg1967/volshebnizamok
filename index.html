@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волшебный замок - Детский развлекательный комплекс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/150x50/6a11cb/ffffff?text=Волшебный+Замок" alt="Волшебный замок">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-login" id="loginBtn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="btn-booking">Забронировать</button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="menu-header">
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="#about"><i class="fas fa-castle"></i> О замке</a></li>
+            <li><a href="#prices"><i class="fas fa-tag"></i> Цены и акции</a></li>
+            <li><a href="#loyalty"><i class="fas fa-crown"></i> Программа лояльности</a></li>
+            <li><a href="#events"><i class="fas fa-calendar"></i> Мероприятия</a></li>
+            <li><a href="#booking"><i class="fas fa-birthday-cake"></i> Забронировать</a></li>
+            <li><a href="#contacts"><i class="fas fa-phone"></i> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Главный экран -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Волшебный замок<br>где живёт ваша сказка!</h1>
+                    <p>Развлечения для детей и отдых для родителей в одном месте</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="registerBtn">Зарегистрировать карту +100 баллов</button>
+                        <button class="btn-secondary" id="pricesBtn">Посмотреть цены</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О замке -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">О нашем замке</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-child"></i>
+                    <h3>Безопасные зоны</h3>
+                    <p>Профессиональные аниматоры и мягкое покрытие</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Вкусное кафе</h3>
+                    <p>Блюда в виде любимых персонажей</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-couch"></i>
+                    <h3>Зона для родителей</h3>
+                    <p>Уютное место для отдыха</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Полная безопасность</h3>
+                    <p>Видеонаблюдение и дежурный врач</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены и акции -->
+    <section class="section bg-light" id="prices">
+        <div class="container">
+            <h2 class="section-title">Цены и акции</h2>
+            <div class="pricing-table">
+                <div class="price-card">
+                    <h3>Будний день</h3>
+                    <div class="price">800 ₽</div>
+                    <p>2 часа игры</p>
+                    <ul>
+                        <li>Доступ ко всем зонам</li>
+                        <li>Бесплатный Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="price-card featured">
+                    <span class="badge">Акция</span>
+                    <h3>Выходной</h3>
+                    <div class="price">1200 ₽</div>
+                    <p>3 часа игры</p>
+                    <ul>
+                        <li>Доступ ко всем зонам</li>
+                        <li>Напиток в подарок</li>
+                        <li>Бесплатный Wi-Fi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа лояльности -->
+    <section class="section" id="loyalty">
+        <div class="container">
+            <h2 class="section-title">Ключ от Волшебства</h2>
+            <div class="loyalty-card">
+                <div class="card-header">
+                    <i class="fas fa-key"></i>
+                    <h3>Преимущества карты</h3>
+                </div>
+                <ul class="benefits">
+                    <li><i class="fas fa-star"></i> 10% кэшбэк баллами</li>
+                    <li><i class="fas fa-gift"></i> Подарок на день рождения</li>
+                    <li><i class="fas fa-percentage"></i> Скидки на праздники</li>
+                    <li><i class="fas fa-clock"></i> Приоритетное бронирование</li>
+                </ul>
+                <button class="btn-primary" id="registerCardBtn">Получить карту</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма регистрации (модальное окно) -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Регистрация карты</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form id="registrationForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <input type="password" placeholder="Пароль" required>
+                <label class="checkbox">
+                    <input type="checkbox" required>
+                    <span>Согласен на рассылку и обработку данных</span>
+                </label>
+                <button type="submit" class="btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://via.placeholder.com/120x40/6a11cb/ffffff?text=Волшебный+Замок" alt="Логотип">
+                </div>
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> ТЦ «Небо», 5 этаж</p>
+                    <p><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+                    <p><i class="fas fa-clock"></i> 10:00 - 22:00 ежедневно</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Волшебный замок. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                  </html> 
